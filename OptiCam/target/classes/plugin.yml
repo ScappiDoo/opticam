@@ -1,0 +1,35 @@
+name: OptiCam
+version: 1.0.0
+main: dev.scappi.opticam.OptiCam
+api-version: "1.21"
+
+description: Realistic CCTV surveillance system
+author: Scappi
+website: https://github.com/ScappiDoo
+
+soft depend: [Vault]
+
+commands:
+  camshop:
+    description: Open camera shop
+    usage: /camshop
+    permission: opticam.use
+
+  cam:
+    description: Camera control
+    usage: /cam exit
+    permission: opticam.use
+
+  opticam:
+    description: Admin command
+    usage: /opticam reload
+    permission: opticam.admin
+
+permissions:
+  opticam.use:
+    description: Allows usage of cameras
+    default: true
+
+  opticam.admin:
+    description: Administrative access
+    default: op
