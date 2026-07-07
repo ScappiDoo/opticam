@@ -1,0 +1,30 @@
+# Build output
+target/
+build/
+*.jar
+!.mvn/wrapper/maven-wrapper.jar
+
+# Maven
+dependency-reduced-pom.xml
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+
+# IDE
+.idea/
+*.iml
+*.iws
+*.ipr
+.vscode/
+.settings/
+.project
+.classpath
+
+# OS
+.DS_Store
+Thumbs.db
+
+# FUSE mount artifacts
+.fuse_hidden*
